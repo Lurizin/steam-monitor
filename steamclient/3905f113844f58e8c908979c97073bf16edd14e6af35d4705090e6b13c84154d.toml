@@ -48,6 +48,11 @@ name = "GetDecryptionKey"
 rva = "0x9D6B70"
 sig = "48 89 5C 24 08 48 89 6C 24 10 48 89 74 24 18 57 48 81 EC 40 01 00 00 8B FA"
 
+[0xCC79542C]
+name = "GetOrAddAppData"
+rva = "0x4B74E0"
+sig = "48 83 EC 68 48 8B 05 ?? ?? ?? ?? 48 89 5C 24 78 48 89 6C 24 60"
+
 [0x3B3A0F9D]
 name = "GetPackageInfo"
 rva = "0x4B7700"
