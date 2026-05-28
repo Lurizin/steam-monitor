@@ -22,3 +22,8 @@ sig = "48 89 5C 24 18 55 56 41 57 48 83 EC 40"
 name = "MarkAppChange"
 rva = "0x662BC0"
 sig = "48 83 EC 78 48 8B 05 ?? ?? ?? ?? 48 89 74 24 70"
+
+[0xD055D6C0]
+name = "ShouldShowAppInLibrary"
+rva = "0x5AA880"
+sig = "40 53 48 83 EC 20 48 8B 01 48 8B D9 FF 10 3D D6 0C 09 00"
