@@ -3,6 +3,16 @@ name = "AddProtobufAsBinary"
 rva = "0x9D29B0"
 sig = "48 89 5C 24 10 48 89 6C 24 18 48 89 74 24 20 57 48 83 EC 20"
 
+[0x221F0661]
+name = "CSteamUIAppControllerRunFrame"
+rva = "0x603C80"
+sig = "48 89 5C 24 18 48 89 6C 24 20 56 57 41 54 41 55 41 57 48 83 EC 40"
+
+[0xB030A061]
+name = "FillInAppOverview"
+rva = "0x5F3880"
+sig = "48 89 54 24 10 48 89 4C 24 08 55 53 56 57 41 54 41 55 41 56 41 57 48 8D 6C 24 E1"
+
 [0x3FC68546]
 name = "GetAppByID"
 rva = "0x5F6210"
@@ -22,8 +32,3 @@ sig = "48 89 5C 24 18 48 89 6C 24 20 56 41 54 41 57 48 83 EC 40"
 name = "MarkAppChange"
 rva = "0x67D1B0"
 sig = "48 83 EC 78 48 8B 05 ?? ?? ?? ?? 48 89 7C 24 68"
-
-[0xD055D6C0]
-name = "ShouldShowAppInLibrary"
-rva = "0x5C4660"
-sig = "40 53 48 83 EC 20 48 8B 01 48 8B D9 FF 10 3D D6 0C 09 00"
