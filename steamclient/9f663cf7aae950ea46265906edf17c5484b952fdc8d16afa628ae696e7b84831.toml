@@ -33,6 +33,11 @@ name = "CloseAppCloud"
 rva = "0xA19E80"
 sig = "48 89 5C 24 10 57 48 83 EC 30 8B FA 48 8B D9 85 D2"
 
+[0x6179E8F9]
+name = "ConfigStoreGetBinary"
+rva = "0x5AE930"
+sig = "40 53 55 56 57 48 83 EC 38 48 63 FA 49 8B E9"
+
 [0xAC76B47D]
 name = "GetAppDataFromAppInfo"
 rva = "0x49E320"
