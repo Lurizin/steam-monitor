@@ -33,6 +33,11 @@ name = "CloseAppCloud"
 rva = "0xA374F0"
 sig = "48 89 5C 24 18 57 48 83 EC 30 8B FA"
 
+[0x6179E8F9]
+name = "ConfigStoreGetBinary"
+rva = "0x5C7B30"
+sig = "48 89 5C 24 08 48 89 6C 24 10 48 89 74 24 18 57 48 83 EC 30 48 63 FA 49 8B E9"
+
 [0xAC76B47D]
 name = "GetAppDataFromAppInfo"
 rva = "0x4B6120"
@@ -42,11 +47,6 @@ sig = "48 89 5C 24 08 48 89 6C 24 10 48 89 74 24 18 57 41 56 41 57 48 81 EC 70 0
 name = "GetAppIDForCurrentPipe"
 rva = "0x97E140"
 sig = "48 83 EC 08 8B 81 30 0D 00 00"
-
-[0xD51873C5]
-name = "GetDecryptionKey"
-rva = "0x9D6B70"
-sig = "48 89 5C 24 08 48 89 6C 24 10 48 89 74 24 18 57 48 81 EC 40 01 00 00 8B FA"
 
 [0xCC79542C]
 name = "GetOrAddAppData"
