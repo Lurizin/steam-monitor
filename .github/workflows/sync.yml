@@ -1,0 +1,23 @@
+name: sync-steam-monitor
+# Espelha os branches pattern/ipc do upstream (OpenSteam001/steam-monitor) a cada
+# 3h. Assim, quando a Steam atualiza e o upstream publica o pattern novo, seu
+# espelho recebe sozinho. workflow_dispatch permite rodar manualmente tambem.
+on:
+  schedule:
+    - cron: '17 */3 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Espelha pattern + ipc do upstream
+        run: |
+          git clone --bare -q https://github.com/OpenSteam001/steam-monitor.git up
+          cd up
+          git push -q "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" \
+            --force 'refs/heads/pattern:refs/heads/pattern' 'refs/heads/ipc:refs/heads/ipc'
+          echo "sync ok em $(date -u)"
